@@ -5,8 +5,8 @@ lazy val catsCheckSettings = Seq(
   licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
   homepage := Some(url("http://github.com/non/cats-check")),
 
-  scalaVersion := "2.12.0",
-  crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0"),
+  scalaVersion := "2.12.2",
+  crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.2"),
 
   scalacOptions ++= Seq(
     "-feature",
@@ -15,11 +15,11 @@ lazy val catsCheckSettings = Seq(
   ),
 
   libraryDependencies ++= Seq(
-    "org.scalacheck" %%% "scalacheck" % "1.13.4",
+    "org.scalacheck" %%% "scalacheck" % "1.13.5",
     "org.typelevel" %%% "cats" % "0.8.1",
     "org.typelevel" %%% "cats-laws" % "0.8.1" % "test",
-    "org.scalatest" %%% "scalatest" % "3.0.0" % "test",
-    "org.typelevel" %%% "discipline" % "0.7.2"      % "test"
+    "org.scalatest" %%% "scalatest" % "3.0.3" % "test",
+    "org.typelevel" %%% "discipline" % "0.7.3"      % "test"
   ),
 
   releaseCrossBuild := true,
